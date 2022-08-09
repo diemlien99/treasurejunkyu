@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@font-face{
+	font-family: NWV;
+	src: url("../font/NWV.TTF")
+}
+
+body {
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	background: url("../image/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color:#070D2D;
+	width: 100%;
+}
+
+
+.text-logo{font-family: "NWV"}
+.text-title{font-family: "NWV";font-size:40px; text-align: center}
+.lineheight-0{line-height: 0;}
+.lineheight-normal{line-height: normal;}
+
+
+/*HEADER*/
+header{
+	height: 50px;line-height: 50px;background-color: #f5d44c;
+	position: fixed;width: 100%;z-index: 100; 
+}
+
+header .logo{padding-top:10px}
+
+header img{height: 30px}
+
+header .menu ul{
+	margin: 0;padding: 0;list-style: none;display: flex;
+}
+header .menu ul li a{
+	padding: 0 15px;display: block;font-size: 15px;
+}
+header .menu ul li a:hover{
+	color: white;
+}
+
+
+/*HOME*/
+#home {
+	padding-top: 100px;
+	font-family: "NWV";
+}
+
+#home .text-size{
+	font-size: 100px;
+}
+
+#home .pb-50{
+	padding-bottom: 50px;
+}
+
+#about{padding-top: 60px;}
+
+
+/*ACTIVE*/
+#active .box{
+	height: 380px;
+	border: 1px solid #070D2D;
+	border-radius: 30px;
+	padding: 10px;
+}
+
+#active .box:hover{
+	background: rgba(255,255,255,0.25);
+	
+}
+
+#active .box-text{
+	height: 280px;
+}
+
+
+/*DISCOGRAPHY*/
+#discopgraphy .col-4{
+	overflow: hidden;
+}
+#discopgraphy .album {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+#discopgraphy .album-cover {
+  width: 100%;
+}
+
+#discopgraphy .album-cover img {
+  transform: scale(0.8);
+  transition: all 0.8s;
+}
+#discopgraphy .album:hover .album-cover img {
+  transform: scale(1);
+}
+#discopgraphy .album-text {
+  width: 100%;
+  background-color: #edfcfc;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+	bottom:-100%;
+  transition: all 0.8s;
+	
+}
+#discopgraphy .album:hover .album-text {
+  bottom: 0px;
+}
+
+
+/*MUSIC VIDEO*/
+#musicvideo .thumnail{
+	width: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+#musicvideo .thumnail img{
+	transition: all 1s;
+}
+
+#musicvideo .thumnail:hover img{
+	transform: scale(1.2)
+}
+
+
+/*PHOTO*/
+#photo .item{height: 450px; display: flex;align-items: center;margin: auto 5px;
+}
+
+#slide .owl-nav {
+	position:absolute;
+	top:45%;
+	width:104%; 
+	left: -2%;
+display: flex;justify-content: space-between;align-items: center;
+}
+
+#slide .owl-nav [class*='owl-'] {
+	font-size:40px; 
+	color:#070D2D;
+	line-height: 0;
+}
+
+
+/*ARCHIVE LIBRARY*/
+#archivelibrary .box {
+  border-radius: 20px;
+  overflow: hidden;
+	margin: auto 10px;
+	background-image: linear-gradient(#070D2D 20%,#edfcfc);
+}
+#archivelibrary .box-photo {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: rotate(10deg) translateY(40px);
+	opacity: 0.8;
+	transition: all 1s;
+}
+
+#archivelibrary .box:hover .box-photo{
+	transform: rotate(0) translateY(0);
+	opacity: 1;
+}
+
+
+/*CONTACT*/
+.sns{
+	webkit-box-align: center;
+    webkit-box-pack: center;
+    align-items: center;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact ul {
+    list-style: none;
+	padding: 0;
+}
+
+#contact ul li{
+	padding: 0 10px;
+}
+
+#contact img{width: 24px;}
+
+
+/*FORM*/
+#form input{
+	padding: 6px; width: 100%;
+	border: 1px solid #070D2D; background: none;
+}
+
+#form textarea{
+	border: 1px solid #070D2D; background: none;
+}
+
+.mx-15{
+	margin: 0 15px;
+}
+
+.mt-15{
+	margin-top: 15px;
+}
+
+.ml-15{
+	margin-left: 15px;
+}
+
+.btn-gui{
+	background-color:#070D2D; padding: 10px 20px; color:#f5d44c; cursor: pointer;border: none;
+}
+
+.btn-gui:hover{
+	background-color:#f5d44c;color:#070D2D;border: 1px solid #070D2D;
+}
