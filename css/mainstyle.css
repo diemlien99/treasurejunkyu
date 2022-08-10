@@ -81,27 +81,27 @@ header .menu ul li a:hover{
 
 
 /*DISCOGRAPHY*/
-#discopgraphy .col-4{
+#discography .col-4{
 	overflow: hidden;
 }
-#discopgraphy .album {
+#discography .album {
   width: 100%;
   height: auto;
   position: relative;
   overflow: hidden;
 }
-#discopgraphy .album-cover {
+#discography .album-cover {
   width: 100%;
 }
 
-#discopgraphy .album-cover img {
+#discography .album-cover img {
   transform: scale(0.8);
   transition: all 0.8s;
 }
-#discopgraphy .album:hover .album-cover img {
+#discography .album:hover .album-cover img {
   transform: scale(1);
 }
-#discopgraphy .album-text {
+#discography .album-text {
   width: 100%;
   background-color: #edfcfc;
   text-align: center;
@@ -112,7 +112,7 @@ header .menu ul li a:hover{
   transition: all 0.8s;
 	
 }
-#discopgraphy .album:hover .album-text {
+#discography .album:hover .album-text {
   bottom: 0px;
 }
 
